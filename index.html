@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  </head>
+  <body>
+    <a href="https://tahsun1462.github.io/HOME/"><button class="home"><ion-icon name="home"></ion-icon></button></a><br>
+    <div class="container">
+      <select id="type" onchange="test()">
+        <option value="">- Please Select Something -</option>
+        <option value="mTf">Meter To Foot</option>
+        <option value="fTm">Foot To Meter</option>
+        <option value="miTk">Mile To Kilometer</option>
+        <option value="kTmi">Kilometer To Mile</option>
+        <option value="yTm">Yard To Meter</option>
+        <option value="mTy">Meter To Yard</option>
+        <option value="yTf">Yard To Foot</option>
+        <option value="fTy">Foot To Yard</option>
+      </select>
+      <div class="input">
+        <h3 id="ID">Please Select A Category</h3>
+        <input id="firstValue" type="number" placeholder="Enter Value">
+        <button onclick="button()">Convert</button>
+        <input id="result" readonly="">
+        <button onclick="reset()" class="rst">Reset</button>
+      </div>
+    </div>
+    <script src="script.js" type="text/javascript" charset="utf-8"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+body{
+  background: #22D0EF;
+}
+.container{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #7DD3FC;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+input{
+  width: 98%;
+  height: 40px;
+  text-align: center;
+  font-family: 'Josefin Sans';
+  background: #009C07;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  font-family: ;
+  cursor: normal;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+h3{
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  align-items: center;
+}
+button{
+  box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  transition: 1s;
+  left: 79px;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+}
+.home{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: 0px;
+  padding: 0px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  background: #DC2626;
+  color: white;
+  border-radius: 10px;
+  transition: 0.2s;
+  border: solid 1px black;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.home:hover{
+  border-radius: 12px;
+}
+.home:active{
+  border-radius: 15px;
+}
+input::placeholder{
+  color: black
+}
+.rst{
+  width: 150px;
+  position: relative;
+  left: 50px;
+  background: #B131A6B7;
+  color: white;
+  font-family: 'Josefin Sans';
+}
+button:hover{
+  transform: Scale(115%);
+  opacity: 90%;
+  transition: 0.2s;
+}
+button:active{
+  opacity: 60%;
+  transition: none;
+}
+select{
+  height: 40px;
+  background: #C2A01C;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  text-align: center;
+}
