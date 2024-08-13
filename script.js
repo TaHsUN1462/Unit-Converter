@@ -130,4 +130,5 @@ function reset(){
   result.value = "";
   value.value = "";
   type.value = "";
+  ID.textContent = "Please Select A Category"
 }
