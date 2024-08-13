@@ -94,7 +94,7 @@ function KtMi(){
     
   }
 }
-function FtY(){
+function YtF(){
   if(value.value == ""){
     alert('Invalid Number')
   }else{
@@ -102,7 +102,7 @@ function FtY(){
     
   }
 }
-function YtF(){
+function FtY(){
   if(value.value == ""){
     alert('Invalid Number')
   }else{
