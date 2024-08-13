@@ -85,11 +85,11 @@ input::placeholder{
 button:hover{
   transform: Scale(115%);
   opacity: 90%;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 button:active{
   opacity: 60%;
-  transition: none;
+  transition: 0.1s;
 }
 select{
   height: 40px;
