@@ -99,3 +99,25 @@ select{
   color: white;
   text-align: center;
 }
+.cancel{
+  width: 100px;
+  height: 20px;
+  background: #22D0EF;
+  color: black;
+  border: none;
+  position: relative;
+  box-shadow: none;
+  left: 105px;
+  cursor: pointer;
+}
+dialog{
+  text-align: center;
+  padding: 20px;
+  background: #6B7280;
+}
+dialog h1{
+  margin: 20px 5px;
+  padding-bottom: 20px;
+  color: white;
+  font-weight: bold;
+}
