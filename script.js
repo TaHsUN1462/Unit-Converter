@@ -1,5 +1,6 @@
 let ID = document.getElementById('ID');
 let type = document.getElementById('type');
+let dialog = document.getElementById('alertDialog')
 let value = document.getElementById('firstValue');
 let result = document.getElementById('result');
 function test(){
@@ -51,7 +52,8 @@ function button() {
   }else if(type.value === 'miTk'){
     MitK()
   }else if(type.value === ''){
-    alert('Please Select Above')
+    dialog.showModal();
+    value.value = ""
   }else if(type.value === 'fTy'){
     FtY()
   }else if(type.value === 'yTf'){
@@ -63,72 +65,29 @@ function button() {
   }
 }
 function MtF(){
-  if(value.value == ""){
-    alert('Invalid Number')
-  }else{
     result.value = (value.value * 3.281).toFixed(3);
-    
-  }
 }
 function FtM(){
-  if(value.value == ""){
-    alert('Invalid Number')
-  }else{
     result.value = (value.value * 0.3048).toFixed(3);
-    
-  }
 }
 function MitK(){
-  if(value.value == ""){
-    alert('Invalid Number')
-  }else{
-    result.value = (value.value * 1.609).toFixed(3);
-    
-  }
+  result.value = (value.value * 1.609).toFixed(3);
 }
 function KtMi(){
-  if(value.value == ""){
-    alert('Invalid Number')
-  }else{
-    result.value = (value.value * 0.621371).toFixed(3);
-    
-  }
-}
-function YtF(){
-  if(value.value == ""){
-    alert('Invalid Number')
-  }else{
-    result.value = (value.value * 3).toFixed(3);
-    
-  }
+  result.value = (value.value * 0.621371).toFixed(3);
 }
 function FtY(){
-  if(value.value == ""){
-    alert('Invalid Number')
-  }else{
-    result.value = (value.value * 0.3333333333).toFixed(3);
-    
-  }
+result.value = (value.value * 3).toFixed(3);
+}
+function YtF(){
+result.value = (value.value * 0.3333333333).toFixed(3);
 }
 function YtM(){
-  if(value.value == ""){
-    alert('Invalid Number')
-  }else{
-    result.value = (value.value * 0.9144).toFixed(3);
-    
-  }
+result.value = (value.value * 0.9144).toFixed(3);
 }
 function MtY(){
-  if(value.value == ""){
-    alert('Invalid Number')
-  }else{
-    result.value = (value.value * 1.0936132983).toFixed(3);
-    
-  }
+result.value = (value.value * 1.0936132983).toFixed(3);
 }
-function reset(){
-  result.value = "";
-  value.value = "";
-  type.value = "";
-  ID.textContent = "Please Select A Category"
+function cancelDialog(){
+  dialog.close()
 }
